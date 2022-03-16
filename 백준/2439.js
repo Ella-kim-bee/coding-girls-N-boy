@@ -15,13 +15,13 @@ rl.on('line', function (a) {
 
     // 코드 작성, 매개변수 a
 
-    for(let i = 0; i < a; i++) {
-      let star = '';
-      for (let j = 0; j <= a - 1; j++) {
-        star += j <= i ? '*' : ' ';
+     for(let i = 0; i < a; i++) {
+        let star = '';
+        for (let j = a - 1; j >= 0; j--) {
+          star += j <= i ? '*' : ' ';
+        }
+        console.log(별);
       }
-      console.log(별);
-    }
   rl.close();
 }).on('close', function () {
   process.exit();
