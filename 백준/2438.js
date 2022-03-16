@@ -24,7 +24,7 @@ rl.on('line', function (a) {
       for (let j = 0; j <= a - 1; j++) {
         star += j <= i ? '*' : ' ';
       }
-      console.log(별);
+      console.log(star);
     }
   rl.close();
 }).on('close', function () {
